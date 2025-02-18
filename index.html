@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Background Page</title>
+    <style>
+        /* Import Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+        /* Styling for the body */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Background Image */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://res.cloudinary.com/dto5amokc/image/upload/v1739892411/flors_s7pex6.jpg') no-repeat center center/cover;
+            z-index: -1;
+        }
+
+        /* Semi-transparent overlay for better readability */
+        body::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+            z-index: -1;
+        }
+
+        /* Styling for the button */
+        .button-container {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        button {
+            background: black; /* Changed background to black */
+            border: 2px solid white;
+            padding: 15px 25px;
+            font-size: 20px;
+            color: white; /* Text color set to white */
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="button-container">
+        <a href="index1.html">
+            <button>Something More for You</button>
+        </a>
+    </div>
+
+</body>
+</html>

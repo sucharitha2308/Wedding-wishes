@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image with Text & Additional Image</title>
+    
+    <!-- Google Font for Fancy Style -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Full-page background image */
+        body {
+            background-image: url('https://res.cloudinary.com/dto5amokc/image/upload/v1739884787/wkijotkxlghqrzvpro9k.webp'); /* Change to your background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+            color: white; /* Text color */
+            font-family: 'Dancing Script', cursive; /* Apply Fancy Font */
+        }
+
+        /* Overlay text */
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 40px;
+            font-weight: bold;
+            padding: 15px 25px;
+            border-radius: 10px;
+            margin-top: 200px;
+        }
+
+        /* Additional image */
+        .extra-image {
+            width: 400px; /* Adjust size */
+            height: 400px; /* Ensure it's a circle */
+            border-radius: 50%; /* Keeps it circular */
+            object-fit: cover;
+            margin-left: 280px; /* Moves image 300px to the right */
+            margin-top: 100px; /* Moves image 100px down */
+        }
+
+        /* Move second image to rightmost side */
+        .another {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            right: 0; /* Moves image to the rightmost side */
+            top: 100px; /* Adjust as needed */
+        }
+
+        /* Updated button container to fix it to the rightmost bottom */
+        .button-container {
+            position: fixed; /* Changed to fixed to always stay at the bottom-right */
+            bottom: 20px; /* Bottom padding */
+            right: 20px;  /* Right padding */
+        }
+
+        button {
+            background: black; /* Changed background to black */
+            border: 2px solid white;
+            padding: 15px 25px;
+            font-size: 20px;
+            color: white; /* Text color set to white */
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Text Overlay -->
+    <div class="overlay-text"><i>"Dear Charan Mama and Manasa Akka,</i><br>
+        <em>
+            My heartiest congratulations to both of you! Wishing you a lifetime of love, joy, and happiness💐🥀💫. 
+            I'm truly sorry for missing your special day. 
+        </em>
+    </div>
+
+    <!-- Additional Images -->
+    <img src="https://res.cloudinary.com/dto5amokc/image/upload/v1739887387/charan_pic_beqjb1.jpg"  alt="Extra Image" class="extra-image">
+
+    <!-- Button tag within button-container div -->
+    <div class="button-container">
+        <a href="index.html">
+            <button>Back to Congratulations</button>
+        </a>
+    </div>
+    
+</body>
+</html>
